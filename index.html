@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-<link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
   <title>Frontend Mentor | Age calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,29 +24,34 @@
 </head>
 
 <body>
-  <div class="date">
-  days  <input type="number" placeholder="--" id="day"> 
-  months  <input type="number" placeholder="--" id="mouth"> 
-  years  <input type="number" placeholder="--" id="year"> 
-
+  <div class="container">
+    <div class="date">
+      <div>
+        <legend>days</legend>
+        <input class="date__tex" type="number" placeholder="--" id="day">
+      </div>
+      <div>
+        <legend>months</legend>
+        <input class="date__tex" type="number" placeholder="--" id="mouth">
+      </div>
+      <div>
+        <legend>years</legend>
+        <input class="date__tex" type="number" placeholder="--" id="year">
+      </div>
+      
+    </div>
     <br>
-    <button onclick="inicio()"><img src="assets/images/icon-arrow.svg" alt=""></button>
+      <button onclick="inicio()"><img src="assets/images/icon-arrow.svg" alt=""></button>
+    <br>
+
+    <div class="paint">
+
+      <p > <span class="ano"> -- </span> Year </p>
+      <p> <span class="mes"> -- </span> Month </p>
+      <p> <span class="dia"> -- </span> Day</p>
+
+    </div>
   </div>
-  <br>
-
-  <div class="paint">
-
-    <p> <span class="ano"> -- </span> Year </p>
-    <p> <span class="mes"> -- </span> Month </p>
-    <p> <span class="dia"> -- </span> Day</p>
-
-
-
-
-
-
-  </div>
-
 
 
 

@@ -20,7 +20,7 @@ function inicio() {
 
 function calculo(diaNacimiento, mesNacimiento, anoNacimiento) {
   let anosCumplidos = new Date().getFullYear() - anoNacimiento;
-  let meses = mesNacimiento - new Date().getMonth() + 1;
+  let meses = mesNacimiento - new Date().getMonth();
   let dias = new Date().getDate() - diaNacimiento;
   document.querySelector(".ano").textContent = anosCumplidos;
   document.querySelector(".mes").textContent = meses;
